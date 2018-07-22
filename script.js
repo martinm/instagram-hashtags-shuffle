@@ -14,3 +14,17 @@ shuffle = (arr) => {
     return arr;
 }
 
+splitText = (text, by) => {
+    return text.split(by);
+}
+
+shuffleBtnPressed = () => {
+    let inputText = document.getElementById("inputText");
+    let arr = splitText(inputText.value, " ");
+    shuffle(arr);
+    inputText.value = arr.join(" ");
+}
+
+
+
+// #sdfds #fsfdsf #dsaddcvx #okofokdfos #vcxvxcv

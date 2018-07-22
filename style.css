@@ -1,0 +1,13 @@
+* {
+    margin: 0 auto;    
+}
+textarea {
+    width: 100vw;
+    height: 20vh;
+}
+
+.btn {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+}
