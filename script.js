@@ -15,7 +15,7 @@ shuffle = (arr) => {
 }
 
 splitText = (text, by) => {
-    return text.split(by);
+    return text .split(by);
 }
 
 shuffleBtnPressed = () => {
@@ -23,6 +23,12 @@ shuffleBtnPressed = () => {
     let arr = splitText(inputText.value, " ");
     shuffle(arr);
     inputText.value = arr.join(" ");
+}
+
+copyContent = () => {
+    let inputText = document.getElementById("inputText");
+    inputText.select();
+    document.execCommand("copy");
 }
 
 
