@@ -31,6 +31,10 @@ copyContent = () => {
     document.execCommand("copy");
 }
 
+clearContent = () => {
+    document.getElementById("inputText").value = "";
+}
+
 
 
 // #sdfds #fsfdsf #dsaddcvx #okofokdfos #vcxvxcv
