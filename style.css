@@ -1,13 +1,28 @@
-* {
-    margin: 0 auto;    
+body { 
+    margin: 0 auto; 
+    text-align: center; 
 }
+
 textarea {
     width: 100vw;
     height: 20vh;
+    border-color: #0069ed;
+}
+
+#buttons {
+    width: 100%;
+    height: 200px;
 }
 
 .btn {
-    width: 100vw;
-    height: 5vh;
+    width: 15vw;
+    padding: 15px;
+    display: inline-block;
     text-align: center;
+    background: #0069ed;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
