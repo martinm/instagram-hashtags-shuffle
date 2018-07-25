@@ -2,6 +2,7 @@ body {
     margin: 0 auto; 
     text-align: center; 
     background-color: #011627;
+    color: #fff;
 }
 
 textarea {
@@ -14,6 +15,8 @@ textarea {
     background-color: #FDFFFC;
     margin-top: 20px;
     border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 #buttons {
@@ -34,6 +37,7 @@ textarea {
     -webkit-user-select: none;
     -moz-user-select: none;
     border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn:hover {
@@ -48,10 +52,28 @@ btn:active {
     background: #2EC4B6;
 }
 
+.shu {
+    color: #2EC4B6;
+}
+
 .copyBtn {
     background: #00A8E8;
 }
 
+.cop {
+    color: #00A8E8;
+}
+
 .clearBtn {
     background: #FF1654;
+}
+
+.cle {
+    color: #FF1654;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 40px;
 }
