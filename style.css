@@ -1,12 +1,19 @@
 body { 
     margin: 0 auto; 
     text-align: center; 
+    background-color: #011627;
 }
 
 textarea {
-    width: 100vw;
+    text-align: center;
+    width: 95vw;
     height: 20vh;
+    margin: 0 auto;
+    display: block;
     border-color: #0069ed;
+    background-color: #FDFFFC;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 #buttons {
@@ -15,14 +22,36 @@ textarea {
 }
 
 .btn {
-    width: 15vw;
+    width: 25vw;
     padding: 15px;
     display: inline-block;
     text-align: center;
     background: #0069ed;
     color: #ffffff;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 20px 0px 0px 0px;
+    transition: background 200ms 50ms ease-in-out;
     -webkit-user-select: none;
     -moz-user-select: none;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background: rgb(56, 255, 16);
+}
+
+btn:active {
+
+}
+
+.shuffleBtn {
+    background: #2EC4B6;
+}
+
+.copyBtn {
+    background: #00A8E8;
+}
+
+.clearBtn {
+    background: #FF1654;
 }
