@@ -40,16 +40,16 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn:hover {
-    background: rgb(56, 255, 16);
-}
-
 btn:active {
 
 }
 
 .shuffleBtn {
     background: #2EC4B6;
+}
+
+.shuffleBtn:hover {
+    background: rgb(32, 139, 129);
 }
 
 .shu {
@@ -60,12 +60,20 @@ btn:active {
     background: #00A8E8;
 }
 
+.copyBtn:hover {
+    background: rgb(0, 126, 175);
+}
+
 .cop {
     color: #00A8E8;
 }
 
 .clearBtn {
     background: #FF1654;
+}
+
+.clearBtn:hover {
+    background: rgb(204, 18, 67);
 }
 
 .cle {
