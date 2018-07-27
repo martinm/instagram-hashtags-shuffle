@@ -23,6 +23,9 @@ shuffleBtnPressed = () => {
     let arr = splitText(inputText.value, " ");
     shuffle(arr);
     inputText.value = arr.join(" ");
+
+    document.getElementById("copyBtn").innerText = "COPY ("+arr.length+")";
+    document.getElementById("clearBtn").innerText = "CLEAR ("+arr.length+")";
 }
 
 copyContent = () => {
@@ -33,6 +36,9 @@ copyContent = () => {
 
 clearContent = () => {
     document.getElementById("inputText").value = "";
+
+    document.getElementById("copyBtn").innerText = "COPY (0)";
+    document.getElementById("clearBtn").innerText = "CLEAR (0)";
 }
 
 
