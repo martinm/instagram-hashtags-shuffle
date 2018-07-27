@@ -15,7 +15,7 @@ shuffle = (arr) => {
 }
 
 splitText = (text, by) => {
-    return text .split(by);
+    return text.split(by);
 }
 
 shuffleBtnPressed = () => {
@@ -24,8 +24,8 @@ shuffleBtnPressed = () => {
     shuffle(arr);
     inputText.value = arr.join(" ");
 
-    document.getElementById("copyBtn").innerText = "COPY ("+arr.length+")";
-    document.getElementById("clearBtn").innerText = "CLEAR ("+arr.length+")";
+    document.getElementById("copyBtn").innerText = "COPY (" + arr.length + ")";
+    document.getElementById("clearBtn").innerText = "CLEAR (" + arr.length + ")";
 }
 
 copyContent = () => {
