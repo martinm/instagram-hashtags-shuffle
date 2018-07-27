@@ -21,11 +21,17 @@ splitText = (text, by) => {
 shuffleBtnPressed = () => {
     let inputText = document.getElementById("inputText");
     let arr = splitText(inputText.value, " ");
-    shuffle(arr);
-    inputText.value = arr.join(" ");
+    if (arr.length > 1) {
 
-    document.getElementById("copyBtn").innerText = "COPY (" + arr.length + ")";
-    document.getElementById("clearBtn").innerText = "CLEAR (" + arr.length + ")";
+        shuffle(arr);
+        inputText.value = arr.join(" ");
+
+        document.getElementById("copyBtn").innerText = "COPY (" + arr.length + ")";
+        document.getElementById("clearBtn").innerText = "CLEAR (" + arr.length + ")";
+    } else {
+        document.getElementById("copyBtn").innerText = "COPY (0)";
+        document.getElementById("clearBtn").innerText = "CLEAR (0)";
+    }
 }
 
 copyContent = () => {
@@ -40,7 +46,3 @@ clearContent = () => {
     document.getElementById("copyBtn").innerText = "COPY (0)";
     document.getElementById("clearBtn").innerText = "CLEAR (0)";
 }
-
-
-
-// #sdfds #fsfdsf #dsaddcvx #okofokdfos #vcxvxcv
