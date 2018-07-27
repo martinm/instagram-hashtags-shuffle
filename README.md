@@ -1,6 +1,8 @@
 # readme | instagram-hashtags-shuffle
 This shuffle app/webpage allows users to shuffle their set of base hashtags that they are using most of the time. Why shuffle? To avoid infamous Instagram shadow-ban, apparently when you post the same set of hashtags in the same order you look like a bot. 
 
+[LIVE DEMO](https://shuffleme.xyz/)
+
 ## how to use?
 1. Paste your set of hashtags into the white text box on the top of the page.
 2. Click ‘SHUFFLE’ .
