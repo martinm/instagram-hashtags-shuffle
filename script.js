@@ -36,13 +36,27 @@ shuffleBtnPressed = () => {
 
 copyContent = () => {
     let inputText = document.getElementById("inputText");
-    inputText.select();
-    document.execCommand("copy");
+
+    if (isiOS()) {
+        let range = document.createRange();
+            range.selectNodeContents(inputText);
+            let selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            inputText.setSelectionRange(0, 999999);
+    } else {
+        inputText.select();
+    }
+    document.execCommand('copy');
+
 }
 
 clearContent = () => {
     document.getElementById("inputText").value = "";
-
     document.getElementById("copyBtn").innerText = "COPY (0)";
     document.getElementById("clearBtn").innerText = "CLEAR (0)";
+}
+
+isiOS = () => {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 }
