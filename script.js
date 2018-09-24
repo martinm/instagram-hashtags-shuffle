@@ -1,3 +1,11 @@
+let credits = document.getElementById("credits");
+
+creditsClicked = () => {
+    window.open("https://www.google.com")
+}
+
+credits.addEventListener("click", creditsClicked);
+
 // Fisher–Yates shuffle algorithm 
 shuffle = (arr) => {
     let length = arr.length;
@@ -60,3 +68,4 @@ clearContent = () => {
 isiOS = () => {
     return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 }
+
