@@ -1,7 +1,7 @@
 let credits = document.getElementById("credits");
 
 creditsClicked = () => {
-    window.open("https://www.google.com")
+    window.open("https://www.instagram.com/ma1inowski/")
 }
 
 credits.addEventListener("click", creditsClicked);

@@ -1,3 +1,5 @@
 .DS_Store
 .firebaserc
+.firebase
 firebase.json
+public
